@@ -54,12 +54,4 @@ const NAV = [
    ===================================================================== */
 const ARTWORKS = [
   { src: "images/sushi-dragon.jpg",  title: "Sushi Dragon",   medium: "Markers",        year: "2026", collection: "drawings"  },
-  { src: "images/sky-dragon.svg",    title: "Sky Dragon",     medium: "Markers",        year: "2026", collection: "paintings" },
-  { src: "images/space-whale.svg",   title: "Space Whale",    medium: "Acrylic paint",  year: "2025", collection: "paintings" },
-  { src: "images/forest-king.svg",   title: "The Forest King",medium: "Colored pencil", year: "2026", collection: "drawings"  },
-  { src: "images/robot-friend.svg",  title: "Robot Friend",   medium: "Digital",        year: "2025", collection: "paintings" },
-  { src: "images/volcano.svg",       title: "Volcano",        medium: "Watercolor",     year: "2026", collection: "paintings" },
-  { src: "images/my-cat-pixel.svg",  title: "My Cat Pixel",   medium: "Crayon",         year: "2024", collection: "drawings"  },
-  { src: "images/ocean-monster.svg", title: "Ocean Monster",  medium: "Ink",            year: "2026", collection: "drawings"  },
-  { src: "images/rocket-town.svg",   title: "Rocket Town",    medium: "Markers",        year: "2025", collection: "paintings" },
 ];
