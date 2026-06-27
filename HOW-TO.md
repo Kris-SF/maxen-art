@@ -4,7 +4,7 @@ You don't need to know any code. Just **ask Claude in plain English** and it
 will make the change, save it, and put it live. The website updates by itself
 about a minute later (refresh the page to see it).
 
-Live site: **https://maxen-art.vercel.app**
+Live site: **https://maxen-art.com**
 
 ---
 
