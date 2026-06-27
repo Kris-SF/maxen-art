@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800" width="500" height="800" role="img" aria-label="Rocket Town placeholder">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2c6e"/>
+      <stop offset="1" stop-color="#ff8e72"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="800" fill="url(#dusk)"/>
+  <g fill="#fff"><circle cx="80" cy="80" r="3"/><circle cx="200" cy="50" r="2"/><circle cx="400" cy="100" r="3"/><circle cx="320" cy="60" r="2"/></g>
+  <rect x="60" y="560" width="80" height="180" fill="#2b2350"/>
+  <rect x="170" y="500" width="90" height="240" fill="#37306a"/>
+  <rect x="300" y="580" width="70" height="160" fill="#2b2350"/>
+  <rect x="380" y="520" width="80" height="220" fill="#37306a"/>
+  <g fill="#ffd966"><rect x="80" y="590" width="16" height="16"/><rect x="190" y="540" width="16" height="16"/><rect x="320" y="610" width="14" height="14"/><rect x="400" y="560" width="16" height="16"/></g>
+  <ellipse cx="250" cy="250" rx="42" ry="90" fill="#e8eef7"/>
+  <polygon points="250,140 230,200 270,200" fill="#ff5c5c"/>
+  <polygon points="208,300 230,250 230,320" fill="#ff5c5c"/>
+  <polygon points="292,300 270,250 270,320" fill="#ff5c5c"/>
+  <circle cx="250" cy="230" r="18" fill="#7ec8ff"/>
+  <path d="M232 330 q18 50 36 0 q-18 30 -36 0 z" fill="#ffb347"/>
+  <text x="250" y="770" font-family="Comic Sans MS, Arial, sans-serif" font-size="30" fill="#fff0e6" text-anchor="middle" font-weight="bold">Rocket Town</text>
+</svg>
