@@ -4,31 +4,22 @@
    ===================================================================== */
 
 const SITE = {
-  // ---- your son's name (shows as the logo at the top) ----
-  name: "LEO BARNES",
+  name: "MAXEN",
 
-  // ---- the big hello on the home page ----
-  tagline: "Hi, I'm Leo. I make art.",
-  intro:   "I'm 10 years old. I love drawing dragons, painting space, and inventing creatures that don't exist yet.",
+  tagline: "Hi, I'm Maxen. I make art.",
+  intro:   "I'm 10 years old and I love making art. This is my gallery — new work coming soon.",
 
-  // ---- About page words (each line in quotes is one paragraph) ----
   about: [
-    "I started drawing when I was little and I never stopped. My favorite things to make are creatures, worlds, and anything with bright colors.",
-    "Some of these I made at school and some at home on the kitchen table.",
+    "Hi, I'm Maxen. I'm 10 years old and I love making art.",
+    "I'm just getting my gallery started, so check back soon — there's a lot more on the way.",
   ],
 
-  // ---- how people reach you (a parent's email is a good idea) ----
-  email: "hello@example.com",
+  email: "hello@maxen-art.com",
 
-  // ---- social links. Delete a line if you don't use it. ----
   socials: [
-    { label: "Instagram", url: "https://instagram.com/yourname" },
-    { label: "Email",     url: "mailto:hello@example.com" },
+    { label: "Email", url: "mailto:hello@maxen-art.com" },
   ],
 
-  // ---- show the little title/medium/year under each piece? ----
-  // true  = shows captions (good for a kid's gallery)
-  // false = pure clean gallery, no text, like mosz.com
   showCaptions: true,
 };
 
