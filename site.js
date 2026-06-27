@@ -90,64 +90,7 @@ function step(d) { POS = (POS + d + VIEW.length) % VIEW.length; showLightbox(); 
 // ---------- text pages ----------
 function buildAbout() {
   const paras = SITE.about.map(p => `<p>${p}</p>`).join("");
-  return `<section class="page"><h2>About me</h2>${paras}
-    <p>Want to say hi? Head to the <a href="contact.html">Contact page</a>.</p></section>`;
-}
-function buildContact() {
-  const field = (name, label, type) => `
-    <label class="cf-field">
-      <span class="cf-label">${label} <span class="cf-req">(required)</span></span>
-      ${type === "textarea"
-        ? `<textarea class="cf-input cf-textarea" name="${name}" rows="6" required></textarea>`
-        : `<input class="cf-input" type="${type}" name="${name}" required>`}
-    </label>`;
-  return `<section class="page contact">
-    <h2>Contact</h2>
-    <form id="contactForm" class="contact-form">
-      ${field("name", "Name", "text")}
-      ${field("email", "Email", "email")}
-      ${field("subject", "Subject", "text")}
-      ${field("message", "Message", "textarea")}
-      <button class="cf-submit" type="submit">Submit</button>
-      <p class="cf-note" id="contactNote" role="status" aria-live="polite" hidden></p>
-      <div class="cf-fallback" id="cfFallback" hidden>
-        <a class="cf-alt" id="cfGmail" target="_blank" rel="noopener">Open in Gmail</a>
-      </div>
-    </form>
-  </section>`;
-}
-
-// turns the contact form into a pre-filled email (no server needed).
-// 1) tries the visitor's default mail app via mailto;
-// 2) reveals a Gmail compose link for people who use webmail (no app registered).
-function wireContactForm() {
-  const form = document.getElementById("contactForm");
-  if (!form) return;
-  const enc = encodeURIComponent;
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const get = k => (data.get(k) || "").toString().trim();
-    const to = SITE.contactTo;
-    const subject = get("subject");
-    const body = `Name: ${get("name")}\nEmail: ${get("email")}\n\n${get("message")}`;
-
-    // 1) default mail app (works if one is registered for mailto:)
-    window.location.href = `mailto:${to}?subject=${enc(subject)}&body=${enc(body)}`;
-
-    // 2) Gmail fallback (opens a pre-filled compose tab in the browser)
-    const gmail = document.getElementById("cfGmail");
-    if (gmail) gmail.href =
-      `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(to)}&su=${enc(subject)}&body=${enc(body)}`;
-    const fb = document.getElementById("cfFallback");
-    if (fb) fb.hidden = false;
-
-    const note = document.getElementById("contactNote");
-    if (note) {
-      note.textContent = "If your email app opened, just press send. If nothing opened, use the button below.";
-      note.hidden = false;
-    }
-  });
+  return `<section class="page"><h2>About me</h2>${paras}</section>`;
 }
 
 // ---------- put it all together when the page loads ----------
@@ -165,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (main) {
     if (mode === "about")   main.innerHTML = buildAbout();
-    else if (mode === "contact") { main.innerHTML = buildContact(); wireContactForm(); }
     else { // gallery
       let html = "";
       if (coll === "all" && SITE.tagline) {

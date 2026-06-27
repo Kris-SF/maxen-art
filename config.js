@@ -14,11 +14,6 @@ const SITE = {
     "I'm just getting my gallery started, so check back soon — there's a lot more on the way.",
   ],
 
-  // Where the Contact form sends to. Clicking "Submit" opens the
-  // visitor's own email app with a message addressed here.
-  // (This address is never shown anywhere on the site.)
-  contactTo: "kris@moontowermeta.com",
-
   socials: [],
 
   showCaptions: true,
@@ -35,7 +30,6 @@ const NAV = [
   { label: "Graphite",       file: "graphite.html"       },
   { label: "Marker",         file: "marker.html"         },
   { label: "About",          file: "about.html"          },
-  { label: "Contact",        file: "contact.html"        },
 ];
 
 /* =====================================================================

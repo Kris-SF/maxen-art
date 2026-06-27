@@ -91,7 +91,7 @@ a { color: inherit; }
 .caption .t { font-family: var(--display); font-weight: 600; font-size: 15px; }
 .caption .m { font-family: var(--tag); font-size: 11px; color: var(--muted); margin-top: 2px; }
 
-/* ---------- text pages (about / contact) ---------- */
+/* ---------- text pages (about) ---------- */
 .page { max-width: 640px; margin: 0 auto; padding: 64px 28px 90px; }
 .page h2 {
   font-family: var(--display);
@@ -102,54 +102,6 @@ a { color: inherit; }
 }
 .page p { font-size: 18px; margin-bottom: 16px; }
 .page a { color: var(--accent); }
-
-/* ---------- contact form ---------- */
-.contact { max-width: 760px; }
-.contact h2 { text-align: center; font-size: clamp(40px, 8vw, 72px); margin-bottom: 44px; }
-.contact-form { display: flex; flex-direction: column; gap: 30px; }
-.cf-field { display: flex; flex-direction: column; gap: 12px; }
-.cf-label { font-family: var(--display); font-weight: 600; font-size: 16px; }
-.cf-req { color: var(--muted); font-weight: 400; }
-.cf-input {
-  font-family: var(--body);
-  font-size: 16px;
-  color: var(--ink);
-  border: none;
-  border-bottom: 1px solid var(--ink);
-  background: transparent;
-  padding: 8px 2px;
-  width: 100%;
-}
-.cf-input:focus { outline: none; border-bottom-color: var(--accent); }
-.cf-textarea { resize: vertical; min-height: 130px; }
-.cf-submit {
-  align-self: center;
-  font-family: var(--body);
-  font-size: 16px;
-  color: var(--ink);
-  background: transparent;
-  border: 1px solid var(--ink);
-  padding: 14px 40px;
-  cursor: pointer;
-  margin-top: 6px;
-  transition: background .2s ease, color .2s ease;
-}
-.cf-submit:hover { background: var(--ink); color: var(--paper); }
-.cf-note { text-align: center; color: var(--muted); font-family: var(--tag); font-size: 13px; }
-.cf-fallback { text-align: center; margin-top: 4px; }
-.cf-alt {
-  display: inline-block;
-  font-family: var(--body);
-  font-size: 15px;
-  color: var(--ink);
-  border: 1px solid var(--ink);
-  padding: 11px 24px;
-  text-decoration: none;
-  cursor: pointer;
-  background: transparent;
-  transition: background .2s ease, color .2s ease;
-}
-.cf-alt:hover { background: var(--ink); color: var(--paper); }
 
 /* ---------- footer ---------- */
 .site-footer {

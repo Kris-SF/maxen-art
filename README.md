@@ -21,8 +21,8 @@ Everything else runs itself.
 
 - `config.js`  — EDIT THIS (your info + art list)
 - `index.html` — home page (shows all art)
-- `art.html`, `drawings.html` — section pages
-- `about.html`, `contact.html` — text pages
+- `digital.html`, `graphite.html`, `marker.html` — section pages (one per medium)
+- `about.html` — text page
 - `style.css`  — colors & layout (change colors at the very top)
 - `site.js`    — the engine (don't touch)
 - `images/`    — your pictures live here

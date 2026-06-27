@@ -51,8 +51,6 @@ That's it. Claude saves the picture and adds it to the gallery.
 
 > Rename *Sky Dragon* to *Fire Dragon*.
 
-> Send contact-form messages to a different address.
-
 ---
 
 ## Moving things around
