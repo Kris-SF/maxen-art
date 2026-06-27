@@ -53,6 +53,7 @@ const NAV = [
    The gallery fits them together automatically and never crops them.
    ===================================================================== */
 const ARTWORKS = [
+  { src: "images/sushi-dragon.jpg",  title: "Sushi Dragon",   medium: "Markers",        year: "2026", collection: "drawings"  },
   { src: "images/sky-dragon.svg",    title: "Sky Dragon",     medium: "Markers",        year: "2026", collection: "paintings" },
   { src: "images/space-whale.svg",   title: "Space Whale",    medium: "Acrylic paint",  year: "2025", collection: "paintings" },
   { src: "images/forest-king.svg",   title: "The Forest King",medium: "Colored pencil", year: "2026", collection: "drawings"  },
