@@ -53,6 +53,11 @@ const NAV = [
    The gallery fits them together automatically and never crops them.
    ===================================================================== */
 const ARTWORKS = [
-  { src: "images/soccer-player.jpeg",  title: "Soccer Player",   medium: "Pencil", year: "2026", collection: "drawings" },
-  { src: "images/crumply-pillow.png",  title: "Bedtime",         medium: "Pencil", year: "2026", collection: "drawings" },
+  { src: "images/bulb-of-imagination.jpeg", title: "Bulb of Imagination", medium: "Colored pencil", year: "2026", collection: "drawings"  },
+  { src: "images/sushi-dragon.jpeg",        title: "Sushi Dragon",        medium: "Marker",         year: "2026", collection: "drawings"  },
+  { src: "images/soccer-player.jpeg",       title: "Soccer Player",       medium: "Graphite",       year: "2026", collection: "drawings"  },
+  { src: "images/crumply-pillow.png",       title: "Bedtime",             medium: "Graphite",       year: "2026", collection: "drawings"  },
+  { src: "images/bop-it.jpeg",              title: "Bop It",              medium: "Graphite",       year: "2026", collection: "drawings"  },
+  { src: "images/fierce-jaguar.jpg",        title: "Fierce Jaguar",       medium: "Digital",        year: "2026", collection: "paintings" },
+  { src: "images/magic-touch.jpeg",         title: "Magic Touch",         medium: "Watercolor",     year: "2026", collection: "paintings" },
 ];
