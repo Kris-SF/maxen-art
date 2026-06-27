@@ -94,11 +94,46 @@ function buildAbout() {
     <p>Want to say hi? Email <a href="mailto:${SITE.email}">${SITE.email}</a>.</p></section>`;
 }
 function buildContact() {
-  const socials = SITE.socials
-    .map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join(" · ");
-  return `<section class="page"><h2>Say hello</h2>
-    <p>Email me at <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
-    <p>${socials}</p></section>`;
+  const field = (name, label, type) => `
+    <label class="cf-field">
+      <span class="cf-label">${label} <span class="cf-req">(required)</span></span>
+      ${type === "textarea"
+        ? `<textarea class="cf-input cf-textarea" name="${name}" rows="6" required></textarea>`
+        : `<input class="cf-input" type="${type}" name="${name}" required>`}
+    </label>`;
+  return `<section class="page contact">
+    <h2>Contact</h2>
+    <form id="contactForm" class="contact-form">
+      ${field("name", "Name", "text")}
+      ${field("email", "Email", "email")}
+      ${field("subject", "Subject", "text")}
+      ${field("message", "Message", "textarea")}
+      <button class="cf-submit" type="submit">Submit</button>
+      <p class="cf-note" id="contactNote" role="status" aria-live="polite" hidden></p>
+    </form>
+  </section>`;
+}
+
+// turns the contact form into a pre-filled email (no server needed)
+function wireContactForm() {
+  const form = document.getElementById("contactForm");
+  if (!form) return;
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const get = k => (data.get(k) || "").toString().trim();
+    const to = SITE.contactTo || SITE.email;
+    const body = `Name: ${get("name")}\nEmail: ${get("email")}\n\n${get("message")}`;
+    const href = `mailto:${to}`
+      + `?subject=${encodeURIComponent(get("subject"))}`
+      + `&body=${encodeURIComponent(body)}`;
+    window.location.href = href;
+    const note = document.getElementById("contactNote");
+    if (note) {
+      note.textContent = "Opening your email app to send the message…";
+      note.hidden = false;
+    }
+  });
 }
 
 // ---------- put it all together when the page loads ----------
@@ -116,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (main) {
     if (mode === "about")   main.innerHTML = buildAbout();
-    else if (mode === "contact") main.innerHTML = buildContact();
+    else if (mode === "contact") { main.innerHTML = buildContact(); wireContactForm(); }
     else { // gallery
       let html = "";
       if (coll === "all" && SITE.tagline) {

@@ -16,6 +16,10 @@ const SITE = {
 
   email: "hello@maxen-art.com",
 
+  // Where the Contact form sends to. Clicking "Submit" opens the
+  // visitor's own email app with a message addressed here.
+  contactTo: "kris@moontowermeta.com",
+
   socials: [
     { label: "Email", url: "mailto:hello@maxen-art.com" },
   ],
