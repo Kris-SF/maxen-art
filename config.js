@@ -29,11 +29,13 @@ const SITE = {
    Leave these as-is unless you want to rename or remove a section.
    ===================================================================== */
 const NAV = [
-  { label: "All Art",   file: "index.html"    },
-  { label: "Paintings", file: "art.html"      },
-  { label: "Drawings",  file: "drawings.html" },
-  { label: "About",     file: "about.html"    },
-  { label: "Contact",   file: "contact.html"  },
+  { label: "All Art",        file: "index.html"          },
+  { label: "Colored Pencil", file: "colored-pencil.html" },
+  { label: "Digital",        file: "digital.html"        },
+  { label: "Graphite",       file: "graphite.html"       },
+  { label: "Marker",         file: "marker.html"         },
+  { label: "About",          file: "about.html"          },
+  { label: "Contact",        file: "contact.html"        },
 ];
 
 /* =====================================================================
@@ -44,20 +46,22 @@ const NAV = [
    title      = what it's called
    medium     = what it's made of (Markers, Paint, Digital, Crayon...)
    year       = when he made it
-   collection = which gallery it belongs in:
-                "paintings"  -> shows on the Paintings page
-                "drawings"   -> shows on the Drawings page
+   collection = which menu page it shows on (must match a page below):
+                "colored-pencil" -> Colored Pencil page
+                "digital"        -> Digital page
+                "graphite"       -> Graphite page
+                "marker"         -> Marker page
                 (every piece shows on the All Art home page no matter what)
 
    Pictures can be ANY size or shape — tall, wide, or square.
    The gallery fits them together automatically and never crops them.
    ===================================================================== */
 const ARTWORKS = [
-  { src: "images/bulb-of-imagination.jpeg", title: "Bulb of Imagination", medium: "Colored pencil", year: "2026", collection: "drawings"  },
-  { src: "images/sushi-dragon.jpeg",        title: "Sushi Dragon",        medium: "Marker",         year: "2026", collection: "drawings"  },
-  { src: "images/soccer-player.jpeg",       title: "Soccer Player",       medium: "Graphite",       year: "2026", collection: "drawings"  },
-  { src: "images/crumply-pillow.png",       title: "Bedtime",             medium: "Graphite",       year: "2026", collection: "drawings"  },
-  { src: "images/bop-it.jpeg",              title: "Bop It",              medium: "Graphite",       year: "2026", collection: "drawings"  },
-  { src: "images/fierce-jaguar.jpg",        title: "Fierce Jaguar",       medium: "Digital",        year: "2026", collection: "paintings" },
-  { src: "images/magic-touch.jpeg",         title: "Magic Touch",         medium: "Watercolor",     year: "2026", collection: "paintings" },
+  { src: "images/bulb-of-imagination.jpeg", title: "Bulb of Imagination", medium: "Colored pencil", year: "2026", collection: "colored-pencil" },
+  { src: "images/sushi-dragon.jpeg",        title: "Sushi Dragon",        medium: "Marker",         year: "2026", collection: "marker"         },
+  { src: "images/soccer-player.jpeg",       title: "Soccer Player",       medium: "Graphite",       year: "2026", collection: "graphite"       },
+  { src: "images/crumply-pillow.png",       title: "Bedtime",             medium: "Graphite",       year: "2026", collection: "graphite"       },
+  { src: "images/bop-it.jpeg",              title: "Bop It",              medium: "Graphite",       year: "2026", collection: "graphite"       },
+  { src: "images/fierce-jaguar.jpg",        title: "Fierce Jaguar",       medium: "Digital",        year: "2026", collection: "digital"        },
+  { src: "images/magic-touch.jpeg",         title: "Magic Touch",         medium: "Colored pencil", year: "2026", collection: "colored-pencil" },
 ];

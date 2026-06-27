@@ -57,17 +57,21 @@ That's it. Claude saves the picture and adds it to the gallery.
 
 ## Moving things around
 
-> Move *My Cat Pixel* to the Paintings page.
+> Move *Magic Touch* to the Marker page.
 
-> Put *Rocket Town* first.
+> Put *Sushi Dragon* first.
 
-There are three places art can live:
+The menu is organized by **what the art is made of**. Right now the pages are:
 
 - **All Art** (home page) — every picture shows here, always.
-- **Paintings** page — pieces marked `paintings`.
-- **Drawings** page — pieces marked `drawings`.
+- **Colored Pencil** — pieces marked `colored-pencil`.
+- **Digital** — pieces marked `digital`.
+- **Graphite** — pieces marked `graphite`.
+- **Marker** — pieces marked `marker`.
 
-Just tell Claude which page you want something on.
+Each piece's `collection` in `config.js` decides which page it lands on. If you
+start using a new material (say, *Watercolor*), just tell Claude — it'll add a
+matching menu page and sort the piece into it.
 
 ---
 
