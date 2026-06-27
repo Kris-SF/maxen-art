@@ -1,4 +1,4 @@
-# Leo's Art Site
+# Maxen's Art Site
 
 A simple, flexible art gallery. The layout is **masonry**, so pictures of any
 size or shape (tall, wide, square) fit together and are **never cropped**.
