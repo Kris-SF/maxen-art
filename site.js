@@ -91,7 +91,7 @@ function step(d) { POS = (POS + d + VIEW.length) % VIEW.length; showLightbox(); 
 function buildAbout() {
   const paras = SITE.about.map(p => `<p>${p}</p>`).join("");
   return `<section class="page"><h2>About me</h2>${paras}
-    <p>Want to say hi? Email <a href="mailto:${SITE.email}">${SITE.email}</a>.</p></section>`;
+    <p>Want to say hi? Head to the <a href="contact.html">Contact page</a>.</p></section>`;
 }
 function buildContact() {
   const field = (name, label, type) => `
@@ -122,7 +122,7 @@ function wireContactForm() {
     e.preventDefault();
     const data = new FormData(form);
     const get = k => (data.get(k) || "").toString().trim();
-    const to = SITE.contactTo || SITE.email;
+    const to = SITE.contactTo;
     const body = `Name: ${get("name")}\nEmail: ${get("email")}\n\n${get("message")}`;
     const href = `mailto:${to}`
       + `?subject=${encodeURIComponent(get("subject"))}`

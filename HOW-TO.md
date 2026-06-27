@@ -51,7 +51,7 @@ That's it. Claude saves the picture and adds it to the gallery.
 
 > Rename *Sky Dragon* to *Fire Dragon*.
 
-> Change the contact email to maxen@example.com.
+> Send contact-form messages to a different address.
 
 ---
 
@@ -64,7 +64,6 @@ That's it. Claude saves the picture and adds it to the gallery.
 The menu is organized by **what the art is made of**. Right now the pages are:
 
 - **All Art** (home page) — every picture shows here, always.
-- **Colored Pencil** — pieces marked `colored-pencil`.
 - **Digital** — pieces marked `digital`.
 - **Graphite** — pieces marked `graphite`.
 - **Marker** — pieces marked `marker`.
