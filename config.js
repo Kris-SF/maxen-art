@@ -53,5 +53,6 @@ const NAV = [
    The gallery fits them together automatically and never crops them.
    ===================================================================== */
 const ARTWORKS = [
-  { src: "images/sushi-dragon.jpg",  title: "Sushi Dragon",   medium: "Markers",        year: "2026", collection: "drawings"  },
+  { src: "images/soccer-player.jpg",   title: "Soccer Player",   medium: "Pencil", year: "2026", collection: "drawings" },
+  { src: "images/crumply-pillow.png",  title: "Crumply Pillow",  medium: "Pencil", year: "2026", collection: "drawings" },
 ];
