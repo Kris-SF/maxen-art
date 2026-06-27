@@ -136,6 +136,20 @@ a { color: inherit; }
 }
 .cf-submit:hover { background: var(--ink); color: var(--paper); }
 .cf-note { text-align: center; color: var(--muted); font-family: var(--tag); font-size: 13px; }
+.cf-fallback { text-align: center; margin-top: 4px; }
+.cf-alt {
+  display: inline-block;
+  font-family: var(--body);
+  font-size: 15px;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 11px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  transition: background .2s ease, color .2s ease;
+}
+.cf-alt:hover { background: var(--ink); color: var(--paper); }
 
 /* ---------- footer ---------- */
 .site-footer {
