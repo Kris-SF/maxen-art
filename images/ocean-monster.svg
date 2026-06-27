@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Ocean Monster placeholder">
+  <defs>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a8bb5"/>
+      <stop offset="1" stop-color="#0d4d6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ocean)"/>
+  <path d="M0 120 q100 -30 200 0 t200 0 t200 0 t200 0 v-120 H0 z" fill="#5fc0e0" opacity="0.4"/>
+  <path d="M120 360 q40 -120 120 -120 q90 0 110 90 q40 -60 100 -20 q-30 50 -90 50 q-30 70 -120 60 q-90 -10 -120 -60 q-40 10 -50 -10 q30 -10 50 -40 z" fill="#7b4fa3"/>
+  <circle cx="260" cy="290" r="16" fill="#fff"/>
+  <circle cx="262" cy="290" r="8" fill="#222"/>
+  <circle cx="320" cy="290" r="16" fill="#fff"/>
+  <circle cx="322" cy="290" r="8" fill="#222"/>
+  <path d="M240 340 q40 30 90 0" stroke="#3a2050" stroke-width="6" fill="none"/>
+  <circle cx="560" cy="160" r="12" fill="#bfe9f5" opacity="0.7"/>
+  <circle cx="610" cy="220" r="8" fill="#bfe9f5" opacity="0.7"/>
+  <text x="400" y="460" font-family="Comic Sans MS, Arial, sans-serif" font-size="34" fill="#d8f3ff" text-anchor="middle" font-weight="bold">Ocean Monster</text>
+</svg>
