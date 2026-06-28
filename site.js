@@ -93,6 +93,12 @@ function buildAbout() {
   const paras = SITE.about.map(p => `<p>${p}</p>`).join("");
   return `<section class="page"><h2>About me</h2>${paras}</section>`;
 }
+function buildContact() {
+  const form = SITE.contactForm
+    ? `<iframe class="contact-frame" src="${SITE.contactForm}" title="Contact form" loading="lazy"></iframe>`
+    : `<p>Contact form coming soon.</p>`;
+  return `<section class="page contact"><h2>Contact</h2>${form}</section>`;
+}
 
 // ---------- put it all together when the page loads ----------
 document.addEventListener("DOMContentLoaded", () => {
@@ -109,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (main) {
     if (mode === "about")   main.innerHTML = buildAbout();
+    else if (mode === "contact") main.innerHTML = buildContact();
     else { // gallery
       let html = "";
       if (coll === "all" && SITE.tagline) {

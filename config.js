@@ -16,6 +16,10 @@ const SITE = {
 
   socials: [],
 
+  // The Contact page embeds this Google Form. Paste the src="..." link
+  // from the form's < > embed code here. Set to "" to hide the form.
+  contactForm: "https://docs.google.com/forms/d/e/1FAIpQLSd5l-N9-geLAWta-FXWOXeysENz_g0OF3TFFs3k3PqMO76CPg/viewform?embedded=true",
+
   showCaptions: true,
 };
 
@@ -31,6 +35,7 @@ const NAV = [
   { label: "Graphite",       file: "graphite.html"       },
   { label: "Marker",         file: "marker.html"         },
   { label: "About",          file: "about.html"          },
+  { label: "Contact",        file: "contact.html"        },
 ];
 
 /* =====================================================================

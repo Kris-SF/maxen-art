@@ -23,6 +23,7 @@ Everything else runs itself.
 - `index.html` — home page (shows all art)
 - `digital.html`, `graphite.html`, `marker.html` — section pages (one per medium)
 - `about.html` — text page
+- `contact.html` — embedded Google Form (link set in `config.js` → `contactForm`)
 - `style.css`  — colors & layout (change colors at the very top)
 - `site.js`    — the engine (don't touch)
 - `images/`    — your pictures live here
