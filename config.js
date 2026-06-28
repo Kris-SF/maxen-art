@@ -69,5 +69,5 @@ const ARTWORKS = [
   { src: "images/creation-of-adam.jpg",     title: "Creation of Adam",    medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/bamboo-king.jpg",          title: "Bamboo King",         medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/rock-n-otter.jpeg",        title: "Rock N Otter",        medium: "Colored pencil", year: "2026", collection: "colored-pencil" },
-  { src: "images/meltin-moon.jpeg",         title: "Meltin Moon",         medium: "Digital",        year: "2026", collection: "digital"        },
+  { src: "images/melting-moon.jpeg",        title: "Melting Moon",        medium: "Digital",        year: "2026", collection: "digital"        },
 ];
