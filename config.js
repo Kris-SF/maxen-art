@@ -26,6 +26,7 @@ const SITE = {
    ===================================================================== */
 const NAV = [
   { label: "All Art",        file: "index.html"          },
+  { label: "Colored Pencil", file: "colored-pencil.html" },
   { label: "Digital",        file: "digital.html"        },
   { label: "Graphite",       file: "graphite.html"       },
   { label: "Marker",         file: "marker.html"         },
@@ -41,16 +42,19 @@ const NAV = [
    medium     = what it's made of (Markers, Paint, Digital, Crayon...)
    year       = when he made it
    collection = which menu page it shows on (must match a page below):
+                "colored-pencil" -> Colored Pencil page
                 "digital"        -> Digital page
                 "graphite"       -> Graphite page
                 "marker"         -> Marker page
                 (every piece shows on the All Art home page no matter what)
 
+   sold       = OPTIONAL. Add  sold: true  to show a red "Sold" label.
+
    Pictures can be ANY size or shape — tall, wide, or square.
    The gallery fits them together automatically and never crops them.
    ===================================================================== */
 const ARTWORKS = [
-  { src: "images/bulb-of-imagination.jpeg", title: "Bulb of Imagination", medium: "Marker",         year: "2026", collection: "marker"         },
+  { src: "images/bulb-of-imagination.jpeg", title: "Bulb of Imagination", medium: "Marker",         year: "2026", collection: "marker",         sold: true },
   { src: "images/sushi-dragon.jpeg",        title: "Sushi Dragon",        medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/soccer-player.jpeg",       title: "Soccer Player",       medium: "Graphite",       year: "2026", collection: "graphite"       },
   { src: "images/crumply-pillow.png",       title: "Bedtime",             medium: "Graphite",       year: "2026", collection: "graphite"       },
@@ -64,4 +68,6 @@ const ARTWORKS = [
   { src: "images/space-whale.jpg",          title: "Space Whale",         medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/creation-of-adam.jpg",     title: "Creation of Adam",    medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/bamboo-king.jpg",          title: "Bamboo King",         medium: "Digital",        year: "2026", collection: "digital"        },
+  { src: "images/rock-n-otter.jpeg",        title: "Rock N Otter",        medium: "Colored pencil", year: "2026", collection: "colored-pencil" },
+  { src: "images/meltin-moon.jpeg",         title: "Meltin Moon",         medium: "Digital",        year: "2026", collection: "digital"        },
 ];

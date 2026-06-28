@@ -43,8 +43,9 @@ function buildGallery(filter) {
   }
 
   const cards = list.map((a, i) => {
+    const sold = a.sold ? `<div class="sold">Sold</div>` : "";
     const cap = SITE.showCaptions
-      ? `<div class="caption"><div class="t">${a.title}</div><div class="m">${a.medium} · ${a.year}</div></div>`
+      ? `<div class="caption"><div class="t">${a.title}</div><div class="m">${a.medium} · ${a.year}</div>${sold}</div>`
       : "";
     // data-index lets the lightbox know which piece was clicked
     return `<a class="piece" data-index="${i}" href="${a.src}">
