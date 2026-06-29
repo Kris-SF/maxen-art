@@ -68,7 +68,7 @@ const ARTWORKS = [
   { src: "images/magic-touch.jpeg",         title: "Magic Touch",         medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/sentry.jpeg",              title: "Sentry",              medium: "Graphite",       year: "2026", collection: "graphite"       },
   { src: "images/focus.jpeg",               title: "Focus",               medium: "Graphite",       year: "2026", collection: "graphite"       },
-  { src: "images/IV.jpg",                   title: "IV",                  medium: "Marker",         year: "2026", collection: "marker"         },
+  { src: "images/IV.jpeg",                  title: "IV",                  medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/seeing-red.jpeg",          title: "Seeing Red",          medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/space-whale.jpg",          title: "Space Whale",         medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/creation-of-adam.jpg",     title: "Creation of Adam",    medium: "Digital",        year: "2026", collection: "digital"        },
