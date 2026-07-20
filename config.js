@@ -77,4 +77,6 @@ const ARTWORKS = [
   { src: "images/melting-moon.jpeg",        title: "Melting Moon",        medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/coffee-mountain.jpeg",     title: "Coffee Mountain",     medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/odd-one-out.jpg",          title: "Odd One Out",         medium: "Marker",         year: "2026", collection: "marker"         },
+  { src: "images/sporty.jpeg",              title: "Sporty",              medium: "Marker",         year: "2026", collection: "marker"         },
+  { src: "images/wheels.jpeg",              title: "Wheels",              medium: "Marker",         year: "2026", collection: "marker"         },
 ];
