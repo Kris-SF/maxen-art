@@ -8,34 +8,52 @@ size or shape (tall, wide, square) fit together and are **never cropped**.
 **`config.js`** — your name, your bio, your links, and the list of art.
 Everything else runs itself.
 
-## How to add a new piece of art
+## How to add a new piece of art (the current workflow)
 
-1. Put the image file in the `images` folder (drag it in).
-2. Open `config.js` and copy one line in the `ARTWORKS` list, like:
-   `{ src: "images/sky-dragon.svg", title: "Sky Dragon", medium: "Markers", year: "2026", collection: "paintings" },`
-3. Change `src` to your file name, and fill in the title/medium/year.
-4. Set `collection` to `"paintings"` or `"drawings"` (or make up your own —
-   just remember to add a matching page if you want a whole new section).
+This is the routine Kris uses to publish Maxen's art:
+
+1. **On the computer:** save the photo into the **Maxen-art › Published** folder
+   and rename the file to what Maxen wants it called. Simple names are best —
+   lowercase with dashes instead of spaces, e.g. `coffee-mountain.jpg`.
+2. **On GitHub:** open the **`images`** folder → **Add file → Upload files** →
+   drop the photo in → **Commit changes**.
+3. **Here in Claude Code:** open the session and tell Claude the new piece is up,
+   along with its **medium** (Marker, Graphite, Digital, Colored pencil) and
+   anything special (e.g. "mark it sold"):
+   👉 https://claude.ai/code/session_015Q9tgjgvRoawQvD8uKfKEb
+
+Claude then does the rest: adds the piece to `config.js`, sorts it onto the right
+medium page, normalizes the filename (spaces/capitals) and verifies nothing is
+broken, then pushes to `main`. **Vercel redeploys automatically**, so the live
+site updates about a minute later.
+
+> You never edit `config.js` by hand — just upload the image and say the word.
+> To remove, rename, re-order, or mark a piece sold, ask Claude the same way.
+>
+> **The `collection` field** decides which menu page a piece shows on, and must
+> match one of the section pages below (`"marker"`, `"graphite"`, `"digital"`,
+> `"colored-pencil"`). Every piece also appears on the **All Art** home page.
+> Add `sold: true` to a piece to show a red "Sold" label.
 
 ## The files
 
 - `config.js`  — EDIT THIS (your info + art list)
 - `index.html` — home page (shows all art)
-- `digital.html`, `graphite.html`, `marker.html` — section pages (one per medium)
+- `colored-pencil.html`, `digital.html`, `graphite.html`, `marker.html` — section pages (one per medium)
 - `about.html` — text page
 - `contact.html` — embedded Google Form (link set in `config.js` → `contactForm`)
 - `style.css`  — colors & layout (change colors at the very top)
 - `site.js`    — the engine (don't touch)
 - `images/`    — your pictures live here
 
-## Putting it online with Replit
+## Hosting (Vercel)
 
-1. Make a new Repl → choose the **HTML, CSS, JS** template (or a blank static one).
-2. Upload **all** of these files into it, keeping the `images` folder as a folder.
-3. Press **Run** to preview it.
-4. Click **Deploy** → choose **Static** → Deploy. Replit gives you a public link.
+The site is a plain static site hosted on **Vercel**, connected to this GitHub
+repo. Vercel **auto-deploys from the `main` branch** — every push to `main`
+(including the ones Claude makes) rebuilds the live site within about a minute.
+There's no build step and nothing to run by hand.
 
-That's it. To update later, change `config.js` or add images, then Deploy again.
+Live site: **https://maxen-art.com**
 
 ## Tips for photos of real art
 
