@@ -76,7 +76,7 @@ const ARTWORKS = [
   { src: "images/rock-n-otter.jpeg",        title: "Rock N Otter",        medium: "Colored pencil", year: "2026", collection: "colored-pencil" },
   { src: "images/melting-moon.jpeg",        title: "Melting Moon",        medium: "Digital",        year: "2026", collection: "digital"        },
   { src: "images/coffee-mountain.jpeg",     title: "Coffee Mountain",     medium: "Marker",         year: "2026", collection: "marker"         },
-  { src: "images/odd-one-out.jpg",          title: "Odd One Out",         medium: "Marker",         year: "2026", collection: "marker"         },
+  { src: "images/odd-one-out.jpg",          title: "Odd One Out",         medium: "Colored pencil", year: "2026", collection: "colored-pencil" },
   { src: "images/sporty.jpeg",              title: "Sporty",              medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/wheels.jpeg",              title: "Wheels",              medium: "Marker",         year: "2026", collection: "marker"         },
   { src: "images/campfire.jpg",            title: "Campfire",            medium: "Marker",         year: "2026", collection: "marker"         },
